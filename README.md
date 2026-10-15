@@ -1,24 +1,15 @@
 # CIUM-Net
 
-**Contrast-Conditioned Interaction-Unit Update Modulation for Low-Light Image Enhancement**
+![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.13.1%2B-red)
 
-CIUM-Net is an HVI-based dual-branch low-light image enhancement framework. It separates
-the generation of complete interaction-unit updates from their injection into the
-restoration stream.
+CIUM-Net is a PyTorch framework for low-light image enhancement in HVI color space.
+It combines bidirectional chromaticity–intensity update units (BiCIU), local
+contrast-conditioned update modulation (LCUM), and training-only intensity-error-aware
+chromatic consistency regularization (IECC) to separate complete interaction-unit
+update generation from update injection.
 
-- **BiCIU:** bidirectional gated local mixing, cross-branch attention and intra-branch refinement.
-- **LCUM:** input-derived local contrast modulates complete updates from BiCIU-3 and BiCIU-4.
-- **IECC:** intensity-error-aware chromatic consistency regularization, used only during training.
-
-## 📄 Paper
-
-**CIUM-Net: Contrast-Conditioned Interaction-Unit Update Modulation for Low-Light Image Enhancement**  
-Meicheng Li, Guangjian Zhang, Yong Wang, Maoguo Gong, and Jiahui Dai  
-School of Artificial Intelligence, Chongqing University of Technology
-
-This repository implements the manuscript's core method. No pretrained enhancement
-weights or dataset images are included. The release follows the manuscript architecture;
-checkpoints from the earlier experimental CIDNet/DIEM code are not compatible.
+> ## 📄 Paper
 
 ## 🔧 Installation
 
