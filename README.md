@@ -105,8 +105,7 @@ The objective is RGB loss + HVI loss + 0.005 × IECC; each restoration domain us
 L1 + 0.5 × (1 − SSIM) + 50 × edge MSE.
 
 For LOLv2, change `--dataset` and the image directories. Resume using the same
-command with `--resume runs/lolv1/last.pt`. The software defaults to seed 42 and
-validation every 10 epochs; these are not specified in the manuscript.
+command with `--resume runs/lolv1/last.pt`.
 
 ---
 
@@ -140,9 +139,6 @@ The same RGB/HVI restoration objective and IECC regularizer are used throughout.
 ---
 
 ## 📜 License
-
-A project-wide license has not been assigned. See
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the provenance of inherited components.
 
 ---
 
