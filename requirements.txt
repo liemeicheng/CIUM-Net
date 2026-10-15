@@ -1,0 +1,14 @@
+# Paper runtime: Python 3.9, torch 1.13.1, torchvision 0.14.1.
+# Install the appropriate CPU/CUDA torch build before this file.
+torch>=1.13.1
+numpy>=1.23,<2
+Pillow>=9.0
+opencv-python>=4.5,<4.12
+
+# Additional dependencies for full LPIPS / NIQE / BRISQUE evaluation.
+torchvision>=0.14.1
+lpips==0.1.4
+scipy>=1.9,<1.14
+scikit-image>=0.20,<0.25
+image-quality==1.2.7
+libsvm==3.23.0.4
